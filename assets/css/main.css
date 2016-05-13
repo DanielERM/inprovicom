@@ -47,6 +47,10 @@
 	body {
 		-webkit-text-size-adjust: none;
 	}
+    
+    .icon {
+        width: 40%;
+    }
 
 /* Box Model */
 
@@ -1817,8 +1821,8 @@
 		border-color: #444;
 		border-color: rgba(255, 255, 255, 0.075);
 		text-align: center;
-		margin-top: 2em;
-		padding: 3em 0 4em 0;
+		margin-top: 1em;
+		padding: 0;
 		color: inherit;
 	}
 
@@ -1854,7 +1858,7 @@
 			}
 
 			#footer-wrapper {
-				padding: 7em 0 7em 0;
+				padding: 3.5em 0 3.5em 0;
 			}
 
 		/* Header */
@@ -2013,7 +2017,7 @@
 			}
 
 			#footer-wrapper {
-				padding: 4.5em 0 4.5em 0;
+				padding: 1em 0 1em 0;
 			}
 
 			.wrapper {
@@ -2328,7 +2332,7 @@
 			}
 
 			#footer-wrapper {
-				padding: 2em 20px 0 20px;
+				padding: 1em 20px 0 20px;
 			}
 
 			.wrapper {
