@@ -1233,7 +1233,7 @@
 			}
 
 	footer {
-		margin: 2.5em 0 0 0;
+		margin: 0 0 0 0;
 	}
 
 	
@@ -1724,11 +1724,11 @@
 
 /* Wrappers */
 
-	/*#header-wrapper {
-		background: url("images/bg01.png"), url("../../images/header.jpg");
+	#header-wrapper {
+		background: #e0e0e0 url("images/bg01.png");
 		background-position: top left, center center;
 		background-size: auto, cover;
-	}*/
+	}
 
 	#main-wrapper {
 		background: #fff;
@@ -1861,7 +1861,7 @@
 			}
 
 			#footer-wrapper {
-				padding: 3.5em 0 3.5em 0;
+				padding: 1em 0 1em 0;
 			}
 
 		/* Header */
