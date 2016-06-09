@@ -1183,7 +1183,7 @@
 	}
 
 	p, ul, ol, dl, table {
-		margin-bottom: 2em;
+		margin-bottom: 1em;
 	}
 
 	.date {
@@ -1861,7 +1861,7 @@
 			}
 
 			#footer-wrapper {
-				padding: 1em 0 1em 0;
+				padding: 1em 0 0 0;
 			}
 
 		/* Header */
@@ -2021,7 +2021,7 @@
 			}
 
 			#footer-wrapper {
-				padding: 1em 0 1em 0;
+				padding: 1em 0 0 0;
 			}
 
 			.wrapper {
