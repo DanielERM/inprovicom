@@ -53,8 +53,8 @@
     }
     
     #logo {
-        width: 35%;
-        min-width: 300px;
+		width: 36%;
+        min-width: 300px;		
     }
 
 /* Box Model */
@@ -1236,11 +1236,13 @@
 		margin: 2.5em 0 0 0;
 	}
 
+	
+
 	header.major {
 		border-bottom: solid 1px #dbdbdb;
 		margin: 0 0 3em 0;
 	}
-
+	
 		header.major:after {
 			content: '';
 			display: block;
@@ -1900,8 +1902,8 @@
 				position: absolute;
 				right: 0;
 				top: 0;
-				line-height: 4em;
-                width: 60%;
+				line-height: 7em;
+                width: 65%;
 			}
 
 				#nav > ul > li {
@@ -1913,7 +1915,7 @@
 						color: #fff;
 						text-decoration: none;
 						text-transform: uppercase;
-						font-weight: 800;
+						font-weight:800;
 						font-size: 0.95em;
 						letter-spacing: 0.075em;
 						padding: 0.5em 0.8em 0.5em 0.8em;
