@@ -1144,6 +1144,8 @@
 	h3 {
 		font-size: 1.35em;
 		margin-top: 2em;
+		margin-left:5em;
+		text-align: left;
 	}
 
 	b, strong {
@@ -1194,6 +1196,12 @@
 		font-size: 0.9em;
 		color: #696969;
 		margin: 0 0 0.25em 0;
+	}
+	
+	.texto{
+		width: 70%;
+		margin-left:10em;
+		text-align: justify;
 	}
 
 /* Section/Article */
