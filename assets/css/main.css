@@ -53,6 +53,12 @@
 		width: 36%;
         min-width: 300px;		
     }
+    
+    .cent { 
+    	display: table; 
+    	position: relative;
+    	margin:0px auto 0px;
+    }
 
 /* Box Model */
 
@@ -1096,6 +1102,7 @@
 		font-family: 'Open Sans', sans-serif;
 		color: #7b818c;
 		font-weight: 400;
+		width: 70%;
 	}
 
 	a {
