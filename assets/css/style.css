@@ -211,12 +211,13 @@
 }
 
 #wowslider-container1 .ws_images {
-	box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
+	/*box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
 	-webkit-transition: box-shadow .5s cubic-bezier(.4,0,.2,1);
-	transition: box-shadow .5s cubic-bezier(.4,0,.2,1);
+	transition: box-shadow .5s cubic-bezier(.4,0,.2,1);*/
+	width: 1200px;
 }
 #wowslider-container1 .ws_images:hover {
-	box-shadow: 0px 17px 50px rgba(0, 0, 0, 0.19);
+	/*box-shadow: 0px 17px 50px rgba(0, 0, 0, 0.19);*/
 }
 #wowslider-container1 .ws_bullets { 
 	padding: 10px; 

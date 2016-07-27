@@ -1081,7 +1081,7 @@
 	}
 
 	body {
-		background: #303238 url("images/bg01.png");
+		/*background: #303238 url("images/bg01.png");*/
 		font-family: 'Open Sans', sans-serif;
 		color: #7b818c;
 		font-weight: 400;
@@ -1188,9 +1188,9 @@
 		font-style: italic;
 	}
 
-	p, ul, ol, dl, table {
+	/*p, ul, ol, dl, table {
 		margin-bottom: 1em;
-	}
+	}*/
 
 	.date {
 		display: block;
@@ -1380,7 +1380,6 @@
 		.image img {
 			display: block;
 			width: 100%;
-			border-radius: 8px;
 		}
 
 		.image:before {
@@ -1535,11 +1534,11 @@
 		font-size: 0.9em;
 		color: #696969;
 		float: left;
-		width: 6em;
+		width: 2em;
 	}
 
 	dl.contact dd {
-		margin: 0 0 1em 6em;
+		margin: 0 0 1em 3em;
 	}
 
 	ul.default {
@@ -1665,7 +1664,7 @@
 	
 	.icon {
 		text-decoration: none;
-		width:40%;
+		width:100%;
 	}
 
 		.icon:before {
@@ -1738,9 +1737,9 @@
 /* Wrappers */
 
 	#header-wrapper {
-		background: #e0e0e0 url("images/bg01.png");
+		/*background: #e0e0e0 url("images/bg01.png");
 		background-position: top left, center center;
-		background-size: auto, cover;
+		background-size: auto, cover;*/
 	}
 
 	#main-wrapper {
@@ -1748,14 +1747,9 @@
 	}
 
 	#footer-wrapper {
-		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("images/bg03.png"), url("images/bg02.png");
-		background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("images/bg03.png"), url("images/bg02.png");
-		background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("images/bg03.png"), url("images/bg02.png");
-		background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("images/bg03.png"), url("images/bg02.png");
-		position: relative;
-		background-repeat: repeat-x, no-repeat, repeat;
-		background-size: 100% 100%, 100% 15em, auto auto;
-		background-position: top left, top center, top left;
+		position:relative;
+		background-color: #CCCCCC;
+		color:white !important;
 	}
 
 	.wrapper > .inner {
@@ -1768,7 +1762,7 @@
 		position: relative;
 		text-shadow: 1px 1px 0 #fff;
 		background-color: #fff;
-		background-image: url("images/bg03.png"), url("images/bg04.png"), url("images/bg02.png");
+		/*background-image: url("images/bg03.png"), url("images/bg04.png"), url("images/bg02.png");*/
 		background-repeat: no-repeat, no-repeat, repeat;
 		background-size: 100% 15em, 100% 15em, auto auto;
 		background-position: top center, bottom center, top left;
@@ -1777,11 +1771,11 @@
 	.wrapper.style3 {
 		position: relative;
 		text-shadow: 1px 1px 0 #fff;
-		background-color: #fff;
+		/*background-color: #fff;
 		background-image: url("images/bg03.png"), url("images/bg02.png");
 		background-repeat: no-repeat, repeat;
 		background-size: 100% 15em, auto auto;
-		background-position: top center, top left;
+		background-position: top center, top left;*/
 	}
 
 /* Header */
@@ -1794,7 +1788,6 @@
 
 	#footer {
 		margin-bottom: 0;
-		text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
 		position: relative;
 		z-index: 2;
 	}
@@ -1802,6 +1795,7 @@
 		#footer h2 {
 			font-size: 1.35em;
 			color: #fff;
+			font-weight: 100;
 		}
 
 		#footer strong {
@@ -1809,7 +1803,8 @@
 		}
 
 		#footer a {
-			color: #acb2bf;
+			color: white;
+			text-decoration:none;
 		}
 
 		#footer .button.alt {
@@ -1838,7 +1833,6 @@
 		border-color: #444;
 		border-color: rgba(255, 255, 255, 0.075);
 		text-align: center;
-		margin-top: 1em;
 		padding: 0;
 		color: inherit;
 	}
@@ -1898,7 +1892,7 @@
 					//background-color: rgba(190, 190,255, 0.9);
 					border-radius: 8px;
 					/*box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.45), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.15);*/
-					text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+					/*text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);*/
 				}
 
 				#header h1 {
@@ -1926,10 +1920,10 @@
 				}
 
 					#nav > ul > li > a, #nav > ul > li > span {
-						color: #fff;
+						color: #ccc;
+						font-weight: 100;
 						text-decoration: none;
 						text-transform: uppercase;
-						font-weight:800;
 						font-size: 0.95em;
 						letter-spacing: 0.075em;
 						padding: 0.5em 0.8em 0.5em 0.8em;
@@ -1937,11 +1931,11 @@
 						outline: 0;
 					}
 
-					#nav > ul > li.active > a, #nav > ul > li.current_page_item > a, #nav > ul > li.active > span, #nav > ul > li.current_page_item > span {
+					/*#nav > ul > li.active > a, #nav > ul > li.current_page_item > a, #nav > ul > li.active > span, #nav > ul > li.current_page_item > span {
 						background: rgba(0, 0, 0, 0.15);
 						box-shadow: inset 1px 1px 0px 0px rgba(0, 0, 0, 0.025), 1px 1px 0px 0px rgba(255, 255, 255, 0.025);
 						text-shadow: -2px -2px 2px rgba(0, 0, 0, 1);
-					}
+					}*/
 
 					#nav > ul > li:last-child {
 						padding-right: 0;
@@ -1949,20 +1943,20 @@
 
 					#nav > ul > li > ul {
 						display: none;
+						margin-top: -20px;
+						margin-left: 20px;
+					}
+					#nav > ul > li > ul >li{
+						border-bottom:1px white solid;
 					}
 
 			.dropotron {
-				background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0)), url("images/bg02.png");
-				background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0)), url("images/bg02.png");
-				background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0)), url("images/bg02.png");
-				background-image: linear-gradient(top, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0)), url("images/bg02.png");
 				position: relative;
-				background-color: #3B3E45;
-				background-color: rgba(59, 62, 69, 0.9);
-				border-radius: 8px;
+				background-color: #ccc;
+				/*border-radius: 8px;
 				box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 0px 0px 2px rgba(255, 255, 255, 0.075), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.2), 0px 2px 14px 0px rgba(0, 0, 0, 0.4);
-				text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
-				padding: 1.5em;
+				text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);*/
+				padding: 1em;
 				line-height: 2.5em;
 				min-width: 15em;
 			}
@@ -1971,14 +1965,14 @@
 					border-top-left-radius: 0;
 					border-top-right-radius: 0;
 					margin-top: -2px;
-					box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 0px 0px 2px rgba(255, 255, 255, 0.075), 0px 2px 14px 0px rgba(0, 0, 0, 0.4);
+					/*box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 0px 0px 2px rgba(255, 255, 255, 0.075), 0px 2px 14px 0px rgba(0, 0, 0, 0.4);*/
 				}
 
 				.dropotron a, .dropotron span {
-					color: #aaa;
+					color: #fff;
 					text-decoration: none;
 					text-transform: uppercase;
-					font-weight: 800;
+					font-weight: 100;
 					font-size: 0.8em;
 					letter-spacing: 0.075em;
 					outline: 0;
@@ -2385,3 +2379,11 @@
 			}
 
 	}
+	
+.hojita{
+	text-align:center;
+}
+.seccion_futer{
+	margin: 0 auto;
+	width:70%;
+}
