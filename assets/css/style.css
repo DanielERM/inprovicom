@@ -474,8 +474,8 @@ _:-ms-input-placeholder, :root #wowslider-container1 .ws_playpause:after {line-h
 	left:0;
 	top:0;
 	/*height:100%;*/
-	max-width: 320px;
-	max-height:640px;	
+	max-width: 180px;
+	max-height:160px;	
 	vertical-align: top;
 	border:none;
 	overflow: hidden;
