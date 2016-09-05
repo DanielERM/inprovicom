@@ -89,7 +89,7 @@
 	margin:0;
 }
 #wowslider-container1 .ws_images > div > img {
-	max-height:360px;
+	max-height:600px;
 }
 
 #wowslider-container1 .ws_images iframe {
@@ -1244,4 +1244,17 @@ _:-ms-input-placeholder, :root #wowslider-container3 .ws_playpause:after {line-h
 	#wowslider-container3 .ws_thumbs{
 		display: none
 	}
+	#wowslider-container3 > .ws_images{
+		width: 300px !important;
+		max-width: 300px !important;
+		border: 1px solid red;
+		
+	}
 }
+table, th, td {
+    
+	text-align: center;
+	}
+	
+	
+	
