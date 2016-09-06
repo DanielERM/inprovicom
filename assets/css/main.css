@@ -1755,7 +1755,7 @@
 	#footer-wrapper {
 		position:relative;
 		background-color: #CCCCCC;
-		color:white !important;
+		color: 	#2F4F4F !important;
 	}
 
 	.wrapper > .inner {
@@ -1800,7 +1800,7 @@
 
 		#footer h2 {
 			font-size: 1.35em;
-			color: #fff;
+			color: #2F4F4F;
 			font-weight: 100;
 		}
 
@@ -1809,7 +1809,7 @@
 		}
 
 		#footer a {
-			color: white;
+			color: #2F4F4F;
 			text-decoration:none;
 		}
 
@@ -1926,7 +1926,7 @@
 				}
 
 					#nav > ul > li > a, #nav > ul > li > span {
-						color: #ccc;
+						color:  #2F4F4F;
 						font-weight: 100;
 						text-decoration: none;
 						text-transform: uppercase;
@@ -1953,7 +1953,7 @@
 						margin-left: 20px;
 					}
 					#nav > ul > li > ul >li{
-						border-bottom:1px white solid;
+						border-bottom:1px  	#2F4F4F solid;
 					}
 
 			.dropotron {
@@ -1975,7 +1975,7 @@
 				}
 
 				.dropotron a, .dropotron span {
-					color: #fff;
+					color: #2F4F4F;
 					text-decoration: none;
 					text-transform: uppercase;
 					font-weight: 100;
@@ -2392,4 +2392,14 @@
 .seccion_futer{
 	margin: 0 auto;
 	width:70%;
+}
+.rayita{
+	border: 1px solid #ccc;
+	
+}
+.textoini{
+	font-size:130%
+}
+.aqui{
+	color:blue;
 }
