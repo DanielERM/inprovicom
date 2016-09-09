@@ -2032,7 +2032,8 @@
 			*/
 
 			body.homepage #header-wrapper {
-				height: 36%
+				height: 36%;
+				
 			}
 
 			#footer-wrapper {
@@ -2398,7 +2399,8 @@
 	
 }
 .textoini{
-	font-size:130%
+	font-size:130%;
+	
 }
 .aqui{
 	color:blue;
