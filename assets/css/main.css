@@ -1148,7 +1148,7 @@
 	h3 {
 		font-size: 1.35em;
 		margin-top: 2em;
-		margin-left:5em;
+		margin-left:5%;
 		text-align: left;
 	}
 
@@ -1204,7 +1204,7 @@
 	
 	.texto{
 		width: 70%;
-		margin-left:10em;
+		margin-left:10%;
 		text-align: justify;
 	}
 
@@ -1422,7 +1422,7 @@
 			
 		.image.video {
 			float: left;
-			margin: 0 2em 2em 0;
+			
 			border: 1px solid black;
 		}
 
@@ -2143,7 +2143,7 @@
 			}
 
 			.box.excerpt header {
-				margin-left: 32%;
+				margin-left: 0%;
 			}
 
 			.box.excerpt p {
@@ -2400,8 +2400,43 @@
 }
 .textoini{
 	font-size:130%;
+	text-align: justify;
+	margin-right:5%;
 	
+}
+.textoini1{
+	font-size:130%;
+	text-align:center;
+		
 }
 .aqui{
 	color:blue;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.videoWrapper1 {
+	position: relative;
+	padding-bottom: 25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper1 iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
