@@ -8,9 +8,11 @@ $cuerpo = '
 </head> 
 <body> 
 <p> 
+<form action="contactenos.php" method="post" name="Contactenos">
 <b><table align="center">
-							<form action="contactenos.php" method="post" name="Contactenos"></form>
-                            <tbody><tr>
+							
+                            <tbody>
+							<tr>
 								<td>Nombre:<span class="Estilo1"> *</span></td>
                                 <td>'.$_POST['nombre'].'</td>
 							</tr>
@@ -26,7 +28,10 @@ $cuerpo = '
                             	<td>Asunto:<span class="Estilo1">*</span></td>
                                 <td>'.$_POST['asunto'].'</td>
 							</tr>
-						</tbody></table></p> 
+						</tbody>
+	</table>
+</form>
+</p> 
 </body> 
 </html> 
 '; 
