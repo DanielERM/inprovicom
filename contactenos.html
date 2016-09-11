@@ -84,39 +84,39 @@
 						
 						 <h1>Contactenos</h1>
 						<div id="contactTableBox">
-							<table align="center">
-								<form action="contactenos.php" method="post" name="Contactenos">
-								<tbody><tr>
-									<td>Nombre:<span class="Estilo1"> *</span></td>
-									<td><input name="nombre" type="text" value="" maxlength="50" width="400"></td>
-								</tr>
-								<tr>
-									<td>Correo Electronico:<span class="Estilo1">*</span></td>
-									<td><input name="email" type="emai" value="" maxlength="50"></td>
-								</tr>
-								<tr>
-									<td>Teléfono:</td>
-									<td><input name="telefono" type="text" value="" maxlength="20"></td>
-								</tr>
-								<tr>
-									<td>Asunto:<span class="Estilo1">*</span></td>
-									<td><textarea name="asunto"></textarea></td>
-								</tr>
-			
-								<tr>
-									<td></td>
-									<td><input name="boton" type="submit" value="Enviar"></td>
-								</tr>
-								
-								<tr>
-									<td colspan="2" align="justify">
-										Los campos con <span class="Estilo1">*</span> son obligatorios 
-										y nos facilitan el proceso de respuesta para todas sus dudas y 
-										sugerencias. Gracias por contactarnos
-									</td>
-								</tr>
-							</tbody></form>
-							</table>
+							<form id="contactenos" action="contactenos.php" method="post" name="Contactenos">
+								<table align="center">
+									<tbody><tr>
+										<td>Nombre:<span class="Estilo1"> *</span></td>
+										<td><input id="nombre" name="nombre" type="text" value="" maxlength="50" width="400" onchange="validate()"></td>
+									</tr>
+									<tr>
+										<td>Correo Electronico:<span class="Estilo1">*</span></td>
+										<td><input id="email" name="email" type="email" value="" maxlength="50" onchange="validate()"></td>
+									</tr>
+									<tr>
+										<td>Teléfono:</td>
+										<td><input id="telefono" name="telefono" type="text" value="" maxlength="20"></td>
+									</tr>
+									<tr>
+										<td>Asunto:<span class="Estilo1">*</span></td>
+										<td><textarea id="asunto" name="asunto" onchange="validate()"></textarea></td>
+									</tr>
+				
+									<tr>
+										<td></td>
+										<td><input name="boton" type="submit" value="Enviar"></td>
+									</tr>
+									
+									<tr>
+										<td colspan="2" align="justify">
+											Los campos con <span class="Estilo1">*</span> son obligatorios 
+											y nos facilitan el proceso de respuesta para todas sus dudas y 
+											sugerencias. Gracias por contactarnos
+										</td>
+									</tr></tbody>
+								</table>
+							</form>
 						</div>
 					</div>
 					</div>
@@ -193,5 +193,56 @@
 			
           	<script type="text/javascript" src="assets/js/wowslider.js"></script>
           	<script type="text/javascript" src="assets/js/script.js"></script>
+			
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$('form#contactenos').submit(function() {
+						if(validate()) {
+							$.ajax({
+								type: 'POST',
+								url: $(this).attr('action'),
+								data: $(this).serialize(),
+								success: function(data) {
+									alert("Hemos recibido tu solicitud, muy pronto nos contactaremos contigo.");
+								}
+							});
+						}
+						else {
+							alert("Complete los campos obligatorios.")
+						}
+						return false;
+					});
+				});
+				
+				function validate() {
+					var valid = true;
+					// validación nombre
+					if($("input#nombre").val()==='') {
+						$("input#nombre").css("border-color", "red");
+						valid = false;
+					}
+					else {
+						$("input#nombre").css("border-color", "green");
+					}
+					// validación email
+					var emailReg = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+					if(!emailReg.test($("input#email").val())) {
+						$("input#email").css("border-color", "red");
+						valid = false;
+					}
+					else {
+						$("input#email").css("border-color", "green");
+					}
+					// validación asunto
+					if($("textarea#asunto").val()==='') {
+						$("textarea#asunto").css("border-color", "red");
+						valid = false;
+					}
+					else {
+						$("textarea#asunto").css("border-color", "green");
+					}
+					return valid;
+				}
+			</script>
 	</body>
 </html>
